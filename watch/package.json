@@ -1,0 +1,52 @@
+{
+  "name": "@3vjia/utils",
+  "version": "1.0.0",
+  "description": "web utils",
+  "main": "src/main.js",
+  "scripts": {
+    "deps": "rm -rf node_modules && vnpm i",
+    "lint": "eslint src/*.js",
+    "test": "vnpm run lint && karma start",
+    "autod": "autod",
+    "dist": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.3weijia.com:vnpm/utils.git"
+  },
+  "keywords": [
+    "web",
+    "utils"
+  ],
+  "author": "Mi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://git.3weijia.com/vnpm/utils/issues"
+  },
+  "devDependencies": {
+    "autod": "^3.1.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "chai": "^3.5.0",
+    "eslint": "^6.1.0",
+    "karma": "<1.0.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-mocha": "^1.2.0",
+    "karma-mocha-reporter": "^2.2.0",
+    "karma-power-assert": "0.0.4",
+    "karma-webpack": "^4.0.2",
+    "mocha": "^3.1.0",
+    "power-assert": "^1.4.1",
+    "webpack": "^4.37.0",
+    "webpack-cli": "^3.3.6"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "publishConfig": {
+    "registry": "https://r-npm.3weijia.com"
+  }
+}
