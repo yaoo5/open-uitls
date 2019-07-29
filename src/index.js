@@ -3,7 +3,7 @@
  */
 
 export function isObjectNotEmpty(obj) {
-  return Object.prototype.toString.call(obj) && Object.keys(obj).length !== 0
+  return Object.prototype.toString.call(obj) === '[object Object]' && Object.keys(obj).length !== 0
 }
 
 export function print() {
