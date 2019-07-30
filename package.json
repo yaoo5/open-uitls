@@ -1,0 +1,26 @@
+{
+  "name": "jest-demo",
+  "version": "1.0.0",
+  "description": "Jest demo",
+  "main": "src/index.js",
+  "directories": {
+    "test": "__tests__"
+  },
+  "scripts": {
+    "build": "webpack -p",
+    "build:del": "rm -rf dist && webpack -p",
+    "test": "jest --color --watchAll"
+  },
+  "keywords": [
+    "Jest"
+  ],
+  "author": "Jackie",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^24.8.0",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6"
+  }
+}
